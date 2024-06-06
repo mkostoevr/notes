@@ -1,0 +1,48 @@
+UInt64x10           0%     226 MB       121 MB (-46%)
+                    50%    129 MB       121 MB (-6%)
+                    99%    35 MB        121 MB (+246%)
+UInt64x100          0%     2162 MB      1112 MB (-49%)  
+                    50%    1099 MB      1112 MB (+1%)   
+                    99%    57 MB        1112 MB (+1851%)
+UInt64x500          0%     10769 MB     5519 MB (-49%)  
+                    50%    5411 MB      5519 MB (+2%)   
+                    99%    158 MB       5519 MB (+3393%)
+UInt64x1000         0%     *over 12GB*  11026 MB (-~50% expected)
+                    50%    10800 MB     11026 MB (+2%)
+                    99%    283 MB       11026 MB (+3796%)
+UInt64, UInt32x9    0%     181 MB       73 MB (-60%)    
+                    50%    107 MB       73 MB (-32%)    
+                    99%    34 MB        73 MB (+115%)   
+UInt64, UInt32x99   0%     1664 MB      580 MB (-65%)   
+                    50%    850 MB       580 MB (-32%)   
+                    99%    52 MB        580 MB (+1015%) 
+UInt64, UInt32x499  0%     8258 MB      2837 MB (-66%)
+                    50%    *unknown*    2837 MB
+                    99%    *unknown*    2837 MB
+UInt64, UInt32x999  0%     *over 12GB*  5657 MB (-~67% expected)
+                    50%    8282 MB      5657 MB (-32%)
+                    99%    235 MB       5657 MB (+2307%)
+UInt64, UInt16x9    0%     *unknown*    48 MB
+                    50%    *unknown*    48 MB
+                    99%    *unknown*    48 MB
+UInt64, UInt16x99   0%     *unknown*    314 MB
+                    50%    *unknown*    314 MB
+                    99%    *unknown*    314 MB
+UInt64, UInt16x499  0%     *unknown*    1495 MB
+                    50%    *unknown*    1495 MB
+                    99%    *unknown*    1495 MB
+UInt64, UInt16x999  0%     *over 12GB*  2972 MB (-~80% expected)
+                    50%    6728 MB      2972 MB (-56%)
+                    99%    204 MB       2972 MB (+1357%)
+UInt64, UInt8x9     0%     *unknown*    36 MB
+                    50%    *unknown*    36 MB
+                    99%    *unknown*    36 MB
+UInt64, UInt8x99    0%     *unknown*    181 MB
+                    50%    *unknown*    181 MB
+                    99%    *unknown*    181 MB
+UInt64, UInt8x499   0%     *unknown*    825 MB
+                    50%    *unknown*    825 MB
+                    99%    *unknown*    825 MB
+UInt64, UInt8x999   0%     12083 MB     1630 MB (-86.6%)
+                    50%    6079 MB      1630 MB (-73%)
+                    99%    188 MB       1630 MB (+767%)
