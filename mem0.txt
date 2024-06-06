@@ -1,3 +1,4 @@
+Columns             Nulls  Base         Patched
 UInt64x10           0%     226 MB       121 MB (-46%)
                     50%    129 MB       121 MB (-6%)
                     99%    35 MB        121 MB (+246%)
