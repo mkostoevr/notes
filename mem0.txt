@@ -19,7 +19,7 @@ UInt64, UInt32x99   0%     1664 MB      580 MB (-65%)
                     99%    52 MB        580 MB (+1015%) 
 UInt64, UInt32x499  0%     8258 MB      2837 MB (-66%)
                     50%    *unknown*    2837 MB
-                    99%    *unknown*    2837 MB
+                    99%    134 MB       2837 MB
 UInt64, UInt32x999  0%     *over 12GB*  5657 MB (-~67% expected)
                     50%    8282 MB      5657 MB (-32%)
                     99%    235 MB       5657 MB (+2307%)
