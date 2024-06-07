@@ -29,7 +29,7 @@ UInt64, UInt16x9    0%     *unknown*    48 MB
 UInt64, UInt16x99   0%     *unknown*    314 MB
                     50%    *unknown*    314 MB
                     99%    *unknown*    314 MB
-UInt64, UInt16x499  0%     *unknown*    1495 MB
+UInt64, UInt16x499  0%     6699 MB      1495 MB (-78%)
                     50%    *unknown*    1495 MB
                     99%    *unknown*    1495 MB
 UInt64, UInt16x999  0%     *over 12GB*  2972 MB (-~80% expected)
