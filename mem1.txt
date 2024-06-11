@@ -1,0 +1,55 @@
+Random sequential access:
+1. Insert keys from 2 to N * 2 sequentially.
+2. Open a read view.
+3. Insert keys from 3 to N * 2 + 1 sequentially, but skip insertion in some% of cases.
+
+Element count  Initial    After RV + inserts
+10M + 1%       214.891MB  429.641MB / 429.734MB (+0.02%)
+10M + 10%      214.891MB  429.781MB / 429.781MB (~)
+10M + 50%      214.891MB  505.438MB / 506.219MB (+0.15%)
+10M + 100%     214.891MB  612.250MB / 615.313MB (+0.50%)
+1M + 1%         21.516MB   43.016MB /  43.016MB (~)
+1M + 10%        21.516MB   43.031MB /  43.031MB (~)
+1M + 50%        21.516MB   50.594MB /  50.672MB (+0.15%)
+1M + 100%       21.516MB   61.281MB /  61.594MB (+0.51%)
+
+Random sequential access (from snapshot):
+1. Insert keys from 2 to N * 2 sequentially. Save and load snapshot.
+2. Open a read view.
+3. Insert keys from 3 to N * 2 + 1 sequentially, but skip insertion in some% of cases.
+
+Element count  After snapshot load             After RV + inserts
+10M + 1%       164.188MB / 164.469MB (+0.17%)  357.328MB / 357.969MB (+0.18%)
+10M + 10%      164.188MB / 164.469MB (+0.17%)  384.234MB / 384.766MB (+0.14%)
+10M + 50%      164.188MB / 164.469MB (+0.17%)  466.656MB / 467.156MB (+0.11%)
+10M + 100%     164.188MB / 164.469MB (+0.17%)  567.781MB / 565.922MB (-0.33%)
+1M + 1%         16.453MB /  16.484MB (+0.19%)   35.813MB /  35.875MB (+0.17%)
+1M + 10%        16.453MB /  16.484MB (+0.19%)   38.500MB /  38.563MB (+0.16%)
+1M + 50%        16.453MB /  16.484MB (+0.19%)   46.766MB /  46.797MB (+0.07%)
+1M + 100%       16.453MB /  16.484MB (+0.19%)   56.844MB /  56.672MB (-0.30%)
+
+Last sequential access:
+1. Insert keys from 2 to N * 2 sequentially.
+2. Open a read view.
+3. Insert between last % of new keys (inserted keys are even, so one can insert odd keys so they're unique).
+
+Element count  Initial    After RV + inserts
+10M + 1%       214.891MB  219.063MB / 219.078MB (+0.01%)
+10M + 10%      214.891MB  254.781MB / 255.094MB (+0.12%)
+10M + 50%      214.891MB  413.703MB / 415.266MB (+0.36%)
+1M + 1%         21.516MB   22.047MB /  22.047MB
+1M + 10%        21.516MB   25.609MB /  25.641MB (+0.12%)
+1M + 50%        21.516MB   41.469MB /  41.625MB (+0.36%)
+
+Last sequential access (from snapshot):
+1. Insert keys from 2 to N * 2 sequentially. Save and load snapshot.
+2. Open a read view.
+3. Insert between last % of new keys (inserted keys are even, so one can insert odd keys so they're unique).
+
+Element count  After snapshot load             After RV + inserts
+10M + 1%       164.188MB / 164.469MB (+0.17%)  168.422MB / 168.672MB (+0.15%)
+10M + 10%      164.188MB / 164.469MB (+0.17%)  204.703MB / 204.797MB (+0.05%)
+10M + 50%      164.188MB / 164.469MB (+0.17%)  366.141MB / 365.359MB (-0.21%)
+1M + 1%         16.453MB /  16.484MB (+0.19%)   17.000MB /  17.031MB (+0.18%)
+1M + 10%        16.453MB /  16.484MB (+0.19%)   20.641MB /  20.641MB (~)
+1M + 50%        16.453MB /  16.484MB (+0.19%)   36.766MB /  36.703MB (-0.17%)
