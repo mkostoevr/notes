@@ -1,3 +1,5 @@
+PK: unsigned.
+
 Random sequential access:
 1. Insert keys from 2 to N * 2 sequentially.
 2. Open a read view.
