@@ -1,6 +1,6 @@
 # Default VS logarithmic offset tree performance
 
-Raw socket `write` + `read` of 1000 requests latency. Requests use unique incremental keys (0, 1, 2, ...).
+Raw socket `write` + `read` of 1000 request batch latency. Requests use unique incremental keys (0, 1, 2, ...).
 
 Options:
 - WAL mode: none
