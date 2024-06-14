@@ -1,9 +1,11 @@
 # Default VS logarithmic offset tree performance
 
+Raw socket `write` + `read` of 1000 requests latency. Requests use unique incremental keys (0, 1, 2, ...).
+
 Options:
-- WAL off
-- unsigned PK
-- incremental unique key insertion/selection/replace/deletion
+- WAL mode: none
+- PK: unsigned
+- Dataset: monotonically incremental (1)
 
 **NOTE**: The difference in select qery is highly suspicious, the results are to be actualized.
 
