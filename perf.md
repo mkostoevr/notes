@@ -5,6 +5,8 @@ Options:
 - unsigned PK
 - incremental unique key insertion/selection/replace/deletion
 
+**NOTE**: The difference in select qery is highly suspicious, the results are to be actuslized.
+
 | Benchmark | Base    | Log(n) Offset Tree               |
 | --------- | ------- | -------------------------------- |
 | insert    | 457krps | 448krps ($\color{red}-2.02％$)   |
