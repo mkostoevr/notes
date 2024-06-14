@@ -5,7 +5,7 @@ Options:
 - unsigned PK
 - incremental unique key insertion/selection/replace/deletion
 
-**NOTE**: The difference in select qery is highly suspicious, the results are to be actuslized.
+**NOTE**: The difference in select qery is highly suspicious, the results are to be actualized.
 
 | Benchmark | Base    | Log(n) Offset Tree               |
 | --------- | ------- | -------------------------------- |
