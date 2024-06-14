@@ -5,7 +5,7 @@ Raw socket `write` + `read` of 1000 request batch latency. Requests use unique i
 Options:
 - WAL mode: none
 - PK: unsigned
-- Dataset: monotonically incremental (1)
+- Dataset: monotonically incremental (start: 0, step: 1)
 
 **NOTE**: The difference in select qery is highly suspicious, the results are to be actualized.
 
