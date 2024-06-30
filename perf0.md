@@ -9,7 +9,7 @@ Information about the tests:
 - buid type: `RelWithDebInfo`;
 - compiler: GCC 13.
 
-## WAL off
+## WAL on
 ### Single requests
 
 | request | stat               | mean (old/new)    | diff                      | mean disp% | mean stdev% |
@@ -76,7 +76,7 @@ Information about the tests:
 |         | 99% (μs)   | 1.21/1.25           | $\color{red}+2.86％$       | 1.04       | 2.19        |
 |         | 99.9% (μs) | 1.33/1.32           | $\color{green}-0.69％$     | 5.78       | 29.48       |
 
-## WAL on
+## WAL off
 ### Single requests
 
 TBD
