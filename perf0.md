@@ -1,7 +1,7 @@
 # Default VS logarithmic offset tree performance
 
 Information about the tests:
-- measured: raw socket `write` + `read` of request (or batch) latency;
+- measured: time of socket `write` + `read` of request (or batch);
 - request count: 1M
 - test count: 10-100, depends on the batch size;
 - key: `{unsigned}`;
