@@ -3,6 +3,7 @@
 Information about the tests:
 - measured: raw socket `write` + `read` of request (or batch) latency;
 - request count: 1M
+- test count: 10-100, depends on the batch size;
 - key: `{unsigned}`;
 - dataset: random with linear distribution;
 - buid type: `RelWithDebInfo`;
