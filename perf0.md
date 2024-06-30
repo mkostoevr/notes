@@ -6,11 +6,11 @@ Information about the tests:
 - test count: 10-100, depends on the batch size;
 - key: `{unsigned}`;
 - dataset: random with linear distribution;
+- WAL: on;
 - buid type: `RelWithDebInfo`;
 - compiler: GCC 13.
 
-## WAL on
-### Single requests
+## Single requests
 
 | request | stat               | mean (old/new)    | diff                      | mean disp% | mean stdev% |
 | ------- | ------------------ | ----------------- | ------------------------- | ---------- | ----------- |
@@ -43,7 +43,7 @@ Information about the tests:
 |         | 99% (μs)           | 58.39/58.70       | $\color{RedOrange}+0.54％$ | 1.16       | 0.50        |
 |         | 99.9% (μs)         | 61.37/61.99       | $\color{RedOrange}+1.02％$ | 2.47       | 1.71        |
 
-### Batched (1000 requests)
+## Batched (1000 requests)
 
 | request | stat       | mean (old/new)      | diff                      | mean disp% | mean stdev% |
 | ------- | ---------- | ------------------- | ------------------------- | ---------- | ----------- |
@@ -76,11 +76,3 @@ Information about the tests:
 |         | 99% (μs)   | 1.21/1.25           | $\color{red}+2.86％$       | 1.04       | 2.19        |
 |         | 99.9% (μs) | 1.33/1.32           | $\color{green}-0.69％$     | 5.78       | 29.48       |
 
-## WAL off
-### Single requests
-
-TBD
-
-### Batched (1000 requests)
-
-TBD
