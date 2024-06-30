@@ -43,6 +43,39 @@ Information about the tests:
 |         | 99% (μs)           | 58.39/58.70       | $\color{RedOrange}+0.54％$ | 1.16       | 0.50        |
 |         | 99.9% (μs)         | 61.37/61.99       | $\color{RedOrange}+1.02％$ | 2.47       | 1.71        |
 
+## Batched (10 requests)
+
+| request | stat               | mean (old/new)      | diff                      | mean disp% | mean stdev% |
+| ------- | ------------------ | ------------------- | ------------------------- | ---------- | ----------- |
+| insert  | Request per second | 153706.02/152401.84 | $\color{green}-0.85％$     | 1.26       | 0.41        |
+|         | Avg (μs)           | 6.51/6.56           | $\color{RedOrange}+0.85％$ | 0.74       | 0.41        |
+|         | Med (μs)           | 6.45/6.51           | $\color{RedOrange}+0.84％$ | 0.71       | 0.35        |
+|         | Min (μs)           | 5.93/5.96           | $\color{RedOrange}+0.42％$ | 3.21       | 1.52        |
+|         | 90% (μs)           | 6.74/6.80           | $\color{RedOrange}+0.90％$ | 0.75       | 0.40        |
+|         | 99% (μs)           | 7.08/7.14           | $\color{RedOrange}+0.90％$ | 1.06       | 0.56        |
+|         | 99.9% (μs)         | 7.62/7.71           | $\color{RedOrange}+1.19％$ | 3.30       | 3.65        |
+| select  | Request per second | 149243.05/147649.46 | $\color{green}-1.07％$     | 0.89       | 0.40        |
+|         | Avg (μs)           | 6.70/6.77           | $\color{RedOrange}+1.08％$ | 0.78       | 0.40        |
+|         | Med (μs)           | 6.65/6.72           | $\color{RedOrange}+1.06％$ | 0.65       | 0.34        |
+|         | Min (μs)           | 6.12/6.14           | $\color{RedOrange}+0.37％$ | 2.79       | 1.10        |
+|         | 90% (μs)           | 6.93/7.01           | $\color{RedOrange}+1.12％$ | 0.73       | 0.37        |
+|         | 99% (μs)           | 7.27/7.35           | $\color{RedOrange}+1.10％$ | 1.04       | 0.50        |
+|         | 99.9% (μs)         | 7.80/7.94           | $\color{RedOrange}+1.81％$ | 3.59       | 4.13        |
+| replace | Request per second | 153753.18/152265.28 | $\color{green}-0.97％$     | 0.65       | 0.34        |
+|         | Avg (μs)           | 6.50/6.57           | $\color{RedOrange}+0.98％$ | 0.75       | 0.34        |
+|         | Med (μs)           | 6.45/6.51           | $\color{RedOrange}+0.93％$ | 0.72       | 0.31        |
+|         | Min (μs)           | 5.93/5.96           | $\color{RedOrange}+0.44％$ | 3.92       | 1.43        |
+|         | 90% (μs)           | 6.74/6.81           | $\color{RedOrange}+1.02％$ | 0.74       | 0.36        |
+|         | 99% (μs)           | 7.08/7.15           | $\color{RedOrange}+1.00％$ | 0.98       | 0.53        |
+|         | 99.9% (μs)         | 7.63/7.70           | $\color{RedOrange}+0.91％$ | 3.67       | 4.32        |
+| delete  | Request per second | 150079.50/148964.96 | $\color{green}-0.74％$     | 2.77       | 0.60        |
+|         | Avg (μs)           | 6.66/6.71           | $\color{RedOrange}+0.74％$ | 0.84       | 0.61        |
+|         | Med (μs)           | 6.61/6.66           | $\color{RedOrange}+0.86％$ | 0.71       | 0.33        |
+|         | Min (μs)           | 6.05/6.08           | $\color{RedOrange}+0.44％$ | 3.24       | 1.26        |
+|         | 90% (μs)           | 6.89/6.95           | $\color{RedOrange}+0.91％$ | 0.77       | 0.38        |
+|         | 99% (μs)           | 7.22/7.28           | $\color{RedOrange}+0.84％$ | 1.10       | 0.55        |
+|         | 99.9% (μs)         | 7.83/7.81           | $\color{green}-0.20％$     | 3.61       | 5.88        |
+
 ## Batched (1000 requests)
 
 | request | stat       | mean (old/new)      | diff                      | mean disp% | mean stdev% |
