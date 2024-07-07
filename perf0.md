@@ -3,7 +3,7 @@
 Information about the tests:
 - measured: time of socket `write` + `read` of batched 1000 requests (no connectors used);
 - request count: 1M
-- test count: 10-100, depends on the batch size;
+- test count: 100;
 - key: `{unsigned}`;
 - dataset: random with linear distribution;
 - WAL: on;
