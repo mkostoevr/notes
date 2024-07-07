@@ -46,7 +46,7 @@ Information about the tests:
 
 ## After tarantool/tarantool#10183
 
-| request | stat       | old       | new       | diff                      | stdev |
+| request | stat       | current   | new with cardinality support | diff   | stdev |
 | ------- | ---------- | --------- | --------- | ------------------------- | ----- |
 | insert  | RPS        | 953798.71 | 947070.48 | $\color{RedOrange}-0.71％$ | 0.58% |
 |         | Avg (μs)   | 1.05      | 1.06      | $\color{RedOrange}+0.72％$ | 0.58% |
