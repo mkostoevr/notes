@@ -1,14 +1,10 @@
 # Default VS logarithmic offset tree performance
 
 Information about the tests:
-- measured: time of socket `write` + `read` of batched 1000 requests (no connectors used);
-- request count: 1M
-- test count: 100;
+- measured: [memtx tree benchmark](https://github.com/tarantool/tarantool/pull/10288);
+- request count: 1M;
 - key: `{unsigned}`;
-- dataset: random with linear distribution;
-- WAL: on;
-- buid type: `RelWithDebInfo`;
-- compiler: GCC 13.
+- WAL: off;
 
 
 ## Current BPS tree
@@ -39,7 +35,7 @@ Information about the tests:
 | box_delete_linear       | 790545.50 / 794302.00 ($\color{green}+0.48％$)       | 0.67% / 0.70% | 0.63% / 0.50% | ~                                  |
 | box_get_linear          | 7899249.00 / 8251549.50 ($\color{green}+4.46％$)     | 0.18% / 0.63% | 0.07% / 0.26% | Improvement (t-value 17.79 > 3.53) |
 
-### New tuple einsertion optimization
+### New tuple insertion optimization
 
 | test                    | 50%                                                 | disp          | stdev         | t-test                             |
 | ----------------------- | --------------------------------------------------- | ------------- | ------------- | ---------------------------------- |
