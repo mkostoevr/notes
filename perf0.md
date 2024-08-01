@@ -22,7 +22,6 @@ Information about the tests:
 
 
 ## After tarantool/tarantool#10183
-### Generic solution
 
 | test                    | 50%                                                 | disp          | stdev         | t-test                             |
 | ----------------------- | --------------------------------------------------- | ------------- | ------------- | ---------------------------------- |
@@ -35,7 +34,7 @@ Information about the tests:
 | box_delete_linear       | 790545.50 /<br>794302.00 ($\color{green}+0.48％$)       | 0.67% / 0.70% | 0.63% / 0.50% | ~                                  |
 | box_get_linear          | 7899249.00 /<br>8251549.50 ($\color{green}+4.46％$)     | 0.18% / 0.63% | 0.07% / 0.26% | Improvement (t-value 17.79 > 3.53) |
 
-### New tuple insertion optimization
+## After new tuple insertion optimization
 
 | test                    | 50%                                                 | disp          | stdev         | t-test                             |
 | ----------------------- | --------------------------------------------------- | ------------- | ------------- | ---------------------------------- |
