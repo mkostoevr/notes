@@ -1,6 +1,7 @@
 <table>
 <tr>
   <th>Tuple count</th>
+  <th>Raw index (master)</th>
   <th>Read view (master)</th>
   <th>Read view (EQ/REQ optimization)</th>
   <th>Read view (Alexander's patch)</th>
