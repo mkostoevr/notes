@@ -1,3 +1,130 @@
+## Part 1
+
+<table>
+<tr>
+  <th>Tuple count</th>
+  <th>Raw index (master)</th>
+  <th>Read view (master)</th>
+  <th>Read view (EQ/REQ optimization)</th>
+  <th>Read view (Alexander's patch)</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>1.40</td>
+  <td>3.88</td>
+  <td>3.86 ($\color{green}-0.44%％$)</td>
+  <td>3.46 ($\color{green}-10.77%％$)</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>1.03</td>
+  <td>2.40</td>
+  <td>2.52 ($\color{RedOrange}+4.87%％$)</td>
+  <td>1.90 ($\color{green}-20.77%％$)</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>0.61</td>
+  <td>1.52</td>
+  <td>1.52 ($\color{RedOrange}+0.47%％$)</td>
+  <td>1.05 ($\color{green}-30.65%％$)</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>0.45</td>
+  <td>1.20</td>
+  <td>1.20 ($\color{RedOrange}+0.16%％$)</td>
+  <td>0.71 ($\color{green}-40.76%％$)</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>0.44</td>
+  <td>1.07</td>
+  <td>1.07 ($\color{RedOrange}+0.20%％$)</td>
+  <td>0.56 ($\color{green}-47.47%％$)</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>0.55</td>
+  <td>0.98</td>
+  <td>0.98 ($\color{RedOrange}+0.28%％$)</td>
+  <td>0.50 ($\color{green}-49.25%％$)</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>0.55</td>
+  <td>0.94</td>
+  <td>0.94 ($\color{green}-0.77%％$)</td>
+  <td>0.51 ($\color{green}-45.85%％$)</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>0.48</td>
+  <td>0.96</td>
+  <td>0.96 ($\color{green}-0.48%％$)</td>
+  <td>0.59 ($\color{green}-38.80%％$)</td>
+</tr>
+<tr>
+  <td>75</td>
+  <td>0.50</td>
+  <td>0.96</td>
+  <td>0.95 ($\color{green}-1.68%％$)</td>
+  <td>0.60 ($\color{green}-37.98%％$)</td>
+</tr>
+<tr>
+  <td>100</td>
+  <td>0.47</td>
+  <td>0.93</td>
+  <td>0.95 ($\color{RedOrange}+1.78%％$)</td>
+  <td>0.52 ($\color{green}-43.70%％$)</td>
+</tr>
+<tr>
+  <td>150</td>
+  <td>0.42</td>
+  <td>0.89</td>
+  <td>1.01 ($\color{red}+12.97%％$)</td>
+  <td>0.50 ($\color{green}-44.13%％$)</td>
+</tr>
+<tr>
+  <td>200</td>
+  <td>0.43</td>
+  <td>0.85</td>
+  <td>0.86 ($\color{RedOrange}+1.02%％$)</td>
+  <td>0.49 ($\color{green}-42.14%％$)</td>
+</tr>
+<tr>
+  <td>250</td>
+  <td>0.42</td>
+  <td>0.80</td>
+  <td>0.79 ($\color{green}-0.18%％$)</td>
+  <td>0.44 ($\color{green}-44.64%％$)</td>
+</tr>
+<tr>
+  <td>300</td>
+  <td>0.43</td>
+  <td>0.80</td>
+  <td>0.80 ($\color{RedOrange}+0.08%％$)</td>
+  <td>0.46 ($\color{green}-42.66%％$)</td>
+</tr>
+<tr>
+  <td>400</td>
+  <td>0.43</td>
+  <td>0.81</td>
+  <td>0.79 ($\color{green}-3.37%％$)</td>
+  <td>0.44 ($\color{green}-45.47%％$)</td>
+</tr>
+<tr>
+  <td>500</td>
+  <td>0.42</td>
+  <td>0.79</td>
+  <td>0.79 ($\color{green}-0.81%％$)</td>
+  <td>0.44 ($\color{green}-45.13%％$)</td>
+</tr>
+</table>
+
+
+## Part 3000
+
 <table>
 <tr>
   <th>Tuple count</th>
@@ -119,4 +246,3 @@
   <td>9.22 ($\color{green}-45.54%％$)</td>
 </tr>
 </table>
-
