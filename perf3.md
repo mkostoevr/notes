@@ -1,3 +1,5 @@
+# Select 1M tuples, 10 tuples per EQ key
+
 <table>
 <tr>
   <th>Part</th>
